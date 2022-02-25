@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action="../login/" method="post">
+        {% csrf_token %}
+        ID  : <input type="text" name="id"><br/>
+        PWD : <input type="text" name="pwd"><p/>
+            <input type="submit" value="login">
+            <a href="../registerForm">가입</a>
+    </form>
+</body>
+</html>
